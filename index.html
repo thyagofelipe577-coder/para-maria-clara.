@@ -1,0 +1,71 @@
+<pre class="code-block__codeBlock_50d5d"><code>&lt;header&gt;
+    &lt;h1&gt;Maria Clara&lt;/h1&gt;
+    &lt;div class="subtitle"&gt;O mundo precisa da sua voz, da sua ética e da sua coragem.&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+    
+    &lt;div class="trigger-phrase"&gt;
+        Lembre-se sempre: Você é capaz. O terceiro período é só o começo de uma história brilhante.
+    &lt;/div&gt;
+
+    &lt;div class="card"&gt;
+        &lt;h2&gt;Nos Passos das Gigantes&lt;/h2&gt;
+        &lt;p&gt;A história do jornalismo foi escrita por mulheres que não aceitaram o silêncio. Elas investigaram, questionaram e mudaram a sociedade. Assim como elas, &lt;strong&gt;você é capaz&lt;/strong&gt; de transformar a realidade com a sua caneta, sua voz e sua câmera.&lt;/p&gt;
+
+        &lt;div class="journalist-profile"&gt;
+            &lt;div class="journalist-name"&gt;Glória Maria&lt;/div&gt;
+            &lt;p&gt;Pioneira no jornalismo brasileiro, foi a primeira repórter a entrar ao vivo e em cores no Jornal Nacional. Ela viajou o mundo, quebrou barreiras raciais e de gênero, e provou que a curiosidade é a maior arma de um jornalista. Quando os desafios aparecerem, lembre-se da coragem de Glória: &lt;strong&gt;Você é capaz de ir a qualquer lugar.&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="journalist-profile"&gt;
+            &lt;div class="journalist-name"&gt;Nellie Bly&lt;/div&gt;
+            &lt;p&gt;No século XIX, ela fingiu ter transtornos mentais para ser internada em um hospício e denunciar as condições desumanas do local. Seu jornalismo investigativo mudou leis e salvou vidas. Ela não aceitou o "não" como resposta. &lt;strong&gt;Você é capaz de expor a verdade, não importa quão escondida ela esteja.&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="journalist-profile"&gt;
+            &lt;div class="journalist-name"&gt;Eliane Brum&lt;/div&gt;
+            &lt;p&gt;Uma das repórteres mais premiadas do Brasil, conhecida por escutar e dar voz aos "invisíveis" da sociedade, desde as periferias até a Amazônia profunda. Ela nos ensina que o jornalismo é, antes de tudo, empatia. &lt;strong&gt;Você é capaz de mudar a vida de alguém apenas por contar a história dela.&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="trigger-phrase"&gt;
+        A cada matéria lida, a cada texto escrito: Você é capaz. O seu olhar para o mundo é único.
+    &lt;/div&gt;
+
+    &lt;div class="interactive-section"&gt;
+        &lt;h2&gt;Duvidou de si mesma hoje?&lt;/h2&gt;
+        &lt;p&gt;Clique no botão abaixo sempre que precisar de um lembrete do seu potencial, Maria Clara.&lt;/p&gt;
+        &lt;button onclick="gerarMensagem()"&gt;Clique aqui&lt;/button&gt;
+        &lt;div id="mensagem-display"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+    // Array de mensagens motivacionais focadas em jornalismo e capacidade
+    const mensagens = [
+        "Você é capaz! Suas palavras têm o poder de transformar realidades.",
+        "Respire fundo, Maria Clara. O jornalismo precisa da sua sensibilidade. Você é capaz!",
+        "Você é capaz de dominar qualquer pauta, não importa o quão difícil ela pareça agora.",
+        "Um bom jornalista é feito de curiosidade e persistência. Você tem os dois de sobra. Você é capaz!",
+        "Não deixe o cansaço do terceiro período te desanimar. Você é capaz de chegar até o fim e brilhar!",
+        "A verdade precisa de defensores. E você é capaz de ser uma das melhores.",
+        "Lembre-se: grandes reportagens começam com pequenas dúvidas. Confie no seu instinto. Você é capaz!",
+        "Você é capaz! A cada dia de estudo, você está mais perto de assinar sua primeira grande matéria."
+    ];
+
+    function gerarMensagem() {
+        // Sorteia uma mensagem aleatória
+        const randomIndex = Math.floor(Math.random() * mensagens.length);
+        const display = document.getElementById('mensagem-display');
+        
+        // Efeito simples de fade in
+        display.style.opacity = 0;
+        setTimeout(() =&gt; {
+            display.innerText = mensagens[randomIndex];
+            display.style.transition = "opacity 0.5s";
+            display.style.opacity = 1;
+        }, 100);
+    }
+&lt;/script&gt;</code></pre>
