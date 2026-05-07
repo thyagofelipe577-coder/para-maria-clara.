@@ -3,41 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Maria Clara</title>
+    <title>Para Maria Clara - A Futura Grande Jornalista</title>
     <style>
-        body { font-family: 'Georgia', serif; background-color: #fdfaf6; color: #2c3e50; margin: 0; padding: 0; line-height: 1.6; }
-        header { background-color: #1a252f; color: #ecf0f1; text-align: center; padding: 3rem 1rem; border-bottom: 5px solid #e74c3c; }
-        .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }
-        h2 { color: #e74c3c; }
-        .trigger { font-size: 1.2rem; font-weight: bold; color: #e74c3c; text-align: center; background: #fdedec; padding: 1rem; border-radius: 5px; margin: 1rem 0; }
-        button { background: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; }
-        #msg { margin-top: 1rem; font-style: italic; color: #d35400; font-size: 1.2rem; }
+        /* Estilos da Página */
+        body {
+            font-family: 'Georgia', serif; /* Fonte clássica de jornalismo */
+            background-color: #fdfaf6;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a252f;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-bottom: 5px solid #e74c3c;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 1rem;
+            color: #bdc3c7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .trigger-phrase {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #e74c3c;
+            text-align: center;
+            margin: 2rem 0;
+            background-color: #fdedec;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .journalist-profile {
+            border-left: 4px solid #e74c3c;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .journalist-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #1a252f;
+            margin-bottom: 0.5rem;
+        }
+        .interactive-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #1a252f;
+            border-radius: 8px;
+            color: white;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+        #mensagem-display {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 2rem;
+            min-height: 60px;
+            color: #f1c40f;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Maria Clara</h1>
-        <p>Futura Jornalista: O mundo precisa da sua voz.</p>
+        <div class="subtitle">O mundo precisa da sua voz, da sua ética e da sua coragem.</div>
     </header>
+
     <div class="container">
-        <div class="trigger">Você é capaz! O 3º período é apenas o começo.</div>
+        
+        <div class="trigger-phrase">
+            Lembre-se sempre: Você é capaz. O terceiro período é só o começo de uma história brilhante.
+        </div>
+
         <div class="card">
-            <h2>Inspirações</h2>
-            <p><strong>Glória Maria:</strong> Mostrou que não existem fronteiras. Você é capaz de chegar onde quiser.</p>
-            <p><strong>Eliane Brum:</strong> Mostrou a força da escuta. Você é capaz de contar histórias que mudam o mundo.</p>
+            <h2>Nos Passos das Gigantes</h2>
+            <p>A história do jornalismo foi escrita por mulheres que não aceitaram o silêncio. Elas investigaram, questionaram e mudaram a sociedade. Assim como elas, <strong>você é capaz</strong> de transformar a realidade com a sua caneta, sua voz e sua câmera.</p>
+
+            <div class="journalist-profile">
+                <div class="journalist-name">Glória Maria</div>
+                <p>Pioneira no jornalismo brasileiro, foi a primeira repórter a entrar ao vivo e em cores no Jornal Nacional. Ela viajou o mundo, quebrou barreiras raciais e de gênero, e provou que a curiosidade é a maior arma de um jornalista. Quando os desafios aparecerem, lembre-se da coragem de Glória: <strong>Você é capaz de ir a qualquer lugar.</strong></p>
+            </div>
+
+            <div class="journalist-profile">
+                <div class="journalist-name">Nellie Bly</div>
+                <p>No século XIX, ela fingiu ter transtornos mentais para ser internada em um hospício e denunciar as condições desumanas do local. Seu jornalismo investigativo mudou leis e salvou vidas. Ela não aceitou o "não" como resposta. <strong>Você é capaz de expor a verdade, não importa quão escondida ela esteja.</strong></p>
+            </div>
+
+            <div class="journalist-profile">
+                <div class="journalist-name">Eliane Brum</div>
+                <p>Uma das repórteres mais premiadas do Brasil, conhecida por escutar e dar voz aos "invisíveis" da sociedade, desde as periferias até a Amazônia profunda. Ela nos ensina que o jornalismo é, antes de tudo, empatia. <strong>Você é capaz de mudar a vida de alguém apenas por contar a história dela.</strong></p>
+            </div>
         </div>
-        <div style="text-align: center;" class="card">
-            <h3>Precisa de um incentivo?</h3>
-            <button onclick="mostrar()">Clique aqui</button>
-            <div id="msg"></div>
+
+        <div class="trigger-phrase">
+            A cada matéria lida, a cada texto escrito: Você é capaz. O seu olhar para o mundo é único.
         </div>
+
+        <div class="interactive-section">
+            <h2>Duvidou de si mesma hoje?</h2>
+            <p>Clique no botão abaixo sempre que precisar de um lembrete do seu potencial, Maria Clara.</p>
+            <button onclick="gerarMensagem()">Clique aqui</button>
+            <div id="mensagem-display"></div>
+        </div>
+
     </div>
+
     <script>
-        function mostrar() {
-            const m = ["Você é capaz!", "Sua escrita é poderosa!", "O jornalismo te espera!", "Confie no seu talento!"];
-            document.getElementById('msg').innerText = m[Math.floor(Math.random() * m.length)];
+        // Array de mensagens motivacionais focadas em jornalismo e capacidade
+        const mensagens = [
+            "Você é capaz! Suas palavras têm o poder de transformar realidades.",
+            "Respire fundo, Maria Clara. O jornalismo precisa da sua sensibilidade. Você é capaz!",
+            "Você é capaz de dominar qualquer pauta, não importa o quão difícil ela pareça agora.",
+            "Um bom jornalista é feito de curiosidade e persistência. Você tem os dois de sobra. Você é capaz!",
+            "Não deixe o cansaço do terceiro período te desanimar. Você é capaz de chegar até o fim e brilhar!",
+            "A verdade precisa de defensores. E você é capaz de ser uma das melhores.",
+            "Lembre-se: grandes reportagens começam com pequenas dúvidas. Confie no seu instinto. Você é capaz!",
+            "Você é capaz! A cada dia de estudo, você está mais perto de assinar sua primeira grande matéria."
+        ];
+
+        function gerarMensagem() {
+            // Sorteia uma mensagem aleatória
+            const randomIndex = Math.floor(Math.random() * mensagens.length);
+            const display = document.getElementById('mensagem-display');
+            
+            // Efeito simples de fade in
+            display.style.opacity = 0;
+            setTimeout(() => {
+                display.innerText = mensagens[randomIndex];
+                display.style.transition = "opacity 0.5s";
+                display.style.opacity = 1;
+            }, 100);
         }
     </script>
+
 </body>
 </html>
